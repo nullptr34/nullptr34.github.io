@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quick App Launcher</title>
+    <script type="text/javascript" src="//statres.quickapp.cn/quickapp/js/routerinline.min.js"></script>
+
+  </head>
+  <body>
+    <form target=_blank>
+
+      <input id="url_input" type="text" name="name" value="">
+
+      <input id='btn' type="submit" value="Launch it with href"
+onclick="location.href=document.getElementById('url_input').value" >
+    </form>
+    <br><br>
+    <form target=_blank>
+
+      <input id="uri_input" type="text" name="name" value="">
+
+      <input id='btn' type="submit" value="Launch it with href"
+onclick="appRouter(&quot;document.getElementById('uri_input').value&quot;, &quot;&quot;, { __WINDOW_STYLE__:&quot;halfScreen&quot; })" >
+    </form>
+
+  </body>
+</html>
